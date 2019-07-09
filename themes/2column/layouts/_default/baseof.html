@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}
+        {{ .Site.Title }}
+      {{ end }}</title>
+    <link rel="stylesheet" href={{ "css/styles.css" | relURL }}>
+  </head>
+
+  <body>
+    {{ block "aside" . }}
+      <!-- {{ block "header" . }} {{ end }} -->
+    {{ end }}
+    <main id="content">
+    {{ block "main" . }}{{ end }}
+    </main>
+    <!-- {{ block "footer" . }} {{ end }} -->
+  </body>
+</html>

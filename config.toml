@@ -1,0 +1,4 @@
+baseURL = "https://die-katrin.eu/techblog/"
+languageCode = "en-us"
+title = "katrin k.'s tech blog"
+theme= "2column"

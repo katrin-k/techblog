@@ -1,0 +1,9 @@
+<span class="section__title">{{ .Title }}</span>
+<ul class="posts">
+  {{ range .Pages }}
+  <article>
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+  </article>
+  {{ end }}
+</ul>

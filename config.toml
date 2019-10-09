@@ -1,4 +1,4 @@
-baseURL = "https://die-katrin.eu/techblog/"
+baseURL = "https://die-katrin.eu/frontend-blog/"
 languageCode = "en-us"
 title = "katrin k.'s frontend blog"
 theme= "2column"

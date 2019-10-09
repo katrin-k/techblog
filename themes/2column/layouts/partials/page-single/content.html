@@ -1,13 +1,11 @@
-<article>
-    <header>
+<article class="post-single">
+    <header class="post-single__header">
       <h1>{{ .Title }}</h1>
-      <!-- {{ partial "page-single/post-meta.html" . }} -->
+      <div class="post-single__meta">
+          {{.Date.Format "January 2, 2006"}}
+      </div>
     </header>
-    <div class="post">
+    <main class="post-single__main">
       {{ .Content }}
-    </div>
-    <!-- {{ partial "page-single/post-navigation.html" . }}
-    {{ partial "page-single/post-related.html" . }}
-    {{ partial "page-single/post-comment.html" . }} -->
+    </main>
   </article>
-  

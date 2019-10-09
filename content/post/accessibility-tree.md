@@ -10,11 +10,11 @@ Part of web semantics.
 
 
 
-Subsequently, I'll abbreviate the Accessibility Tree with ATree. 
+Subsequently, I'll abbreviate the Accessibility Tree with ATree.
 
-The ATree is similar to the DOM tree (and, in fact, generated out of it). The DOM tree is an hierarchical model of a webpage. It's the first thing a browser does when processing a webpage. At the top, there's the document, the HTML document. The first child of the Document node is the `html` node which again has 2 children: the `head` and the `body`. This is the same for all and required to be valid HTML. As you can see from the phrasings, each element in a DOM tree is called a "node". 
+The ATree is similar to the DOM tree (and, in fact, generated out of it). The DOM tree is an hierarchical model of a webpage. It's the first thing a browser does when processing a webpage. At the top, there's the document, the HTML document. The first child of the Document node is the `html` node which again has 2 children: the `head` and the `body`. This is the same for all and required to be valid HTML. As you can see from the phrasings, each element in a DOM tree is called a "node".
 
-The `body` node now can have many different nodes, depending on how the webpage is structured. In this example, we'll have a `<header>` , a `<main>` and a `<footer>` element. In the DOM, these are the children nodes of the `body`. 
+The `body` node now can have many different nodes, depending on how the webpage is structured. In this example, we'll have a `<header>` , a `<main>` and a `<footer>` element. In the DOM, these are the children nodes of the `body`.
 
 The `header` might have an `<h1>` and a `<p>` element as children nodes. The `h1` node has some text, the actual heading. This is now a text node. The same goes for the paragraph.
 
@@ -62,7 +62,7 @@ Here's a graphic that illustrates the DOM tree:
 
 The ATree is created by the browser after the DOM has been modeled. The ATree is a checked  and - in probably most cases - reduced version of the DOM. It is optimized to be used by [assistive technology](https://en.wikipedia.org/wiki/Assistive_technology).
 
-The parts that are taken away the ones that are only visually important. From the above example, actually nothing would be reduced since this example all contains relevant information for the user. 
+The parts that are taken away the ones that are only visually important. From the above example, actually nothing would be reduced since this example all contains relevant information for the user.
 
 ## What is removed for the Accessibility Tree?
 
@@ -75,7 +75,7 @@ roles, states, and properties, and that we specify accessible names and
 descriptions. The browser can then let the assistive technology access that
 information to create a customized experience." (google dev site)
 
-It is also recommended, as a web developer, to not try and optimize for certain assistive devices. Similar to mobile devices, there's such a vast amount of technologies, let alone the number of ways people use zoom and keyboards, that no single web page can cater for all the different options. Instead, we as developers should focus on our output and making it as supportive as possible, thereby relying on web standards (**which are not there yet…**). 
+It is also recommended, as a web developer, to not try and optimize for certain assistive devices. Similar to mobile devices, there's such a vast amount of technologies, let alone the number of ways people use zoom and keyboards, that no single web page can cater for all the different options. Instead, we as developers should focus on our output and making it as supportive as possible, thereby relying on web standards (**which are not there yet…**).
 
 "We can take advantage of that built-in accessibility by writing HTML that expresses the semantics of our page elements." (google)
 

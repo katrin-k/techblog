@@ -2,4 +2,4 @@ baseURL = "https://die-katrin.eu/techblog/"
 languageCode = "en-us"
 title = "katrin k.'s frontend blog"
 theme= "2column"
-summaryLength = 50
+summaryLength = 30

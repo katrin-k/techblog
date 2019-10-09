@@ -1,11 +1,14 @@
 <article class="post-single">
-    <header class="post-single__header">
-      <h1>{{ .Title }}</h1>
-      <div class="post-single__meta">
-          {{.Date.Format "January 2, 2006"}}
-      </div>
-    </header>
-    <main class="post-single__main">
-      {{ .Content }}
-    </main>
-  </article>
+  <header class="post-single__header">
+    <h1>{{ .Title }}</h1>
+    <div class="post-single__meta">
+      {{.Date.Format "January 2, 2006"}}
+    </div>
+  </header>
+  <main class="post-single__main">
+    {{ .Content }}
+  </main>
+  <footer class="post-single__footer">
+    <a href="{{.Site.BaseURL}}">&larrb; Back to home page</a>
+  </footer>
+</article>

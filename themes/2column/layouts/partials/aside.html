@@ -3,26 +3,30 @@
     <a href="{{.Site.BaseURL}}" class="logo" title="Home">
       {{ partial "svg/logo.html" . }}
     </a>
-    <p>frontend thoughts by katrin k.</p>
+    <p>{{.Site.Title}}</p>
   </header>
 
-  <nav role="navigation" aria-label="Main menu">
+  <nav role="navigation" aria-label="Portfolio and Social Media Links">
     <ul class="menu">
-      <li><a href="{{.Site.BaseURL}}" class="menu__link">Home</a></li>
-      <!-- <li><a href="" class="menu__link">Credits</a></li>
-      <li><a href="" class="menu__link">About</a></li> -->
+      <li>
+        <span class="menu__heading">Me elsewhere</span>
+        <ul class="menu">
+          <li><a href="https://twitter.com/_die_katrin" class="menu__link" target="_blank" rel="noopener">Twitter</a>
+          </li>
+          <li><a href="https://chaos.social/@katrin_k" class="menu__link" target="_blank" rel="noopener">Mastodon</a>
+          </li>
+          <li><a href="https://codepen.io/katrin-k/" class="menu__link" target="_blank" rel="noopener">CodePen</a></li>
+          <li><a href="https://github.com/katrin-k" class="menu__link" target="_blank" rel="noopener">Github</a></li>
+          <li>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://die-katrin.eu/frontend-dev/" class="menu__link cta-link" target="_blank"
+          rel="noopener">Available for
+          freelance work</a>
+      </li>
     </ul>
-  </nav>
 
-  <footer class="aside__footer">
-    <nav role="navigation" aria-label="Portfolio and Social Media Links">
-      <ul class="menu">
-        <li><a href="https://die-katrin.eu/frontend-dev/" class="menu__link" target="_blank" rel="noopener">Work
-            site</a></li>
-        <li><a href="https://twitter.com/_die_katrin" class="menu__link" target="_blank" rel="noopener">Twitter</a></li>
-        <li><a href="https://chaos.social/@katrin_k" class="menu__link" target="_blank" rel="noopener">Mastodon</a></li>
-        <li><a href="https://github.com/katrin-k" class="menu__link" target="_blank" rel="noopener">Github</a></li>
-      </ul>
-    </nav>
-  </footer>
+  </nav>
 </aside>

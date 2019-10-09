@@ -1,15 +1,15 @@
 {{ define "aside" }}
-  {{ partial "aside.html" . }}
+{{ partial "aside.html" . }}
 {{ end }}
 
 {{ define "main" }}
-<h1>{{.Title}}</h1>
+<h1 class="home__heading">{{.Title}}</h1>
 <p>{{.Content}}</p>
 
 <ul class="post-list">
-{{ range (.Paginator 6).Pages }}
+  {{ range (.Paginator 8).Pages }}
   <li class="post-list__item">
-    <h2 class="post-list__heading"><a href="{{.Permalink}}">{{.Title}}</a></h2>
+    <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
     <p class="post-list__date">{{.Date.Format "January 2, 2006"}}</p>
     <p class="post-list__summary">{{.Summary}}</p>
     {{ if .Truncated }}
@@ -18,13 +18,13 @@
     </div>
     {{ end }}
   </li>
-{{ end }}
-<!-- {{ partial "pagination.html" . }} -->
-{{ template "_internal/pagination.html" . }}
+  {{ end }}
+  {{ partial "pagination.html" . }}
+  <!-- {{ template "_internal/pagination.html" . }} -->
 </ul>
 
 {{ end }}
 
 {{ define "footer" }}
-  {{ partial "footer.html" . }}
+{{ partial "footer.html" . }}
 {{ end }}

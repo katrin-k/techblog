@@ -1,13 +1,11 @@
 {{ define "title" }}
-  <h2>layout single.htlm</h2>
-  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
-  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
 {{ define "aside" }}
-  {{ partial "aside.html" . }}
+{{ partial "aside.html" . }}
 {{ end }}
 
 {{ define "main" }}
-  {{ partial "page-single/content.html" . }}
+{{ partial "page-single/content.html" . }}
 {{ end }}

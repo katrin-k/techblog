@@ -35,10 +35,8 @@ The main use case seems to be for library and frameworks, to provide unique prop
 
 ## Things that are part of the story, yet only briefly mentioned
 
-(I might make that a subcategory of posts when applicable. This refers to stuff that i didn't look into further, most likely to save my mental capacities for other stuff, stuff i didn't really understand and/or stuff i will only understand once i actually use it, or stuff i feel like i would only repeat what others said, but still want to mention it here. So no need to get back at me trying to explain it.)
-
 - The runtime-wide symbol registry. Has all the symbols, built-in, built by third-party used in your app, built by you and me.
-- `Symbol.for(key)` and `Symbol.keyFor(symbol)`. Methods to look up symbols in the that runtime-wide registry.
+- `Symbol.for(key)` and `Symbol.keyFor(symbol)`. Methods to look up symbols in that runtime-wide registry.
 - Iterations and `Symbol.iterator`.
 - Symbol.match and other Regular expression symbols
 

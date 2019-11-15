@@ -80,28 +80,71 @@ a:focus {
 }
 
 /* Layouts */
-body {
+.blog {
   display: grid;
-  grid-template-columns: 430px minmax(500px, 900px);
+  grid-template-rows: 200px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    grid-template-rows: 280px auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog {
+    grid-template-columns: 430px minmax(500px, 900px);
+  }
 }
 
 .blog__aside {
-  height: calc(100vh - 6rem);
-  overflow: auto;
-  margin: 3rem 3rem 3rem 3rem;
-  padding: 5rem 3rem;
+  height: auto;
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: var(--colorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  .blog__aside {
+    margin: 3rem 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog__aside {
+    height: calc(100vh - 6rem);
+    overflow: auto;
+    margin: 3rem;
+    padding: 5rem 3rem;
+  }
 }
 
 .blog__main {
-  height: calc(100vh - 6rem);
   overflow: auto;
-  margin: 3rem;
-  padding: 5rem;
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: var(--colorWhite);
 }
 
+@media screen and (min-width: 768px) {
+  .blog__main {
+    margin: 1rem 3rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog__main {
+    height: calc(100vh - 6rem);
+    margin: 3rem;
+    padding: 5rem;
+  }
+}
 /* Sidebar */
+@media screen and (max-width: 1023px) {
+  .aside__nav {
+    display: none;
+  }
+}
 
 .logo {
   display: inline-block;
@@ -109,7 +152,13 @@ body {
 }
 
 .logo svg {
-  height: 150px;
+  height: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo svg {
+    height: 150px;
+  }
 }
 
 .menu {
@@ -198,15 +247,28 @@ body {
   margin-top: 3rem;
 }
 
+.post-single__main ul,
+.post-single__main ol {
+  margin-left: 1rem;
+  margin-inline-start: 1rem;
+}
+
 .post-single__main li {
   margin-bottom: 1rem;
 }
 
 .post-single__main blockquote {
   margin: 1rem 0;
-  padding: 1rem 5rem 0.1rem 2rem;
-  border-left: 15px solid var(--colorPrimaryLight);
+  padding: 1rem 2rem 0.1rem 2rem;
+  border-left: 5px solid var(--colorPrimaryLight);
   font-size: 0.95em;
+}
+
+@media screen and (min-width: 1024px) {
+  .post-single__main blockquote {
+    padding: 1rem 5rem 0.1rem 2rem;
+    border-left-width: 15px;
+  }
 }
 
 /* Code blocks, adding + overriding to Prism */

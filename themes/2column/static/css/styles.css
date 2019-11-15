@@ -198,6 +198,10 @@ body {
   margin-top: 3rem;
 }
 
+.post-single__main li {
+  margin-bottom: 1rem;
+}
+
 .post-single__main blockquote {
   margin: 1rem 0;
   padding: 1rem 5rem 0.1rem 2rem;

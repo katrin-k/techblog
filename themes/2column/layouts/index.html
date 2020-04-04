@@ -8,7 +8,10 @@
 
 <ul class="post-list">
   {{ range (.Paginator 8).Pages }}
-  <li class="post-list__item">
+  <li class="post-list__item{{ if .Draft }} post-list__item--draft{{ end }}">
+    {{ if .Draft }}
+    <p>*** Draft*** </p>
+    {{ end }}
     <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
     <time itemprop="datePublished" datetime="{{.Date.Format "2006-01-02"}}" class="post-list__date">
         {{.Date.Format "January 2, 2006"}}

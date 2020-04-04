@@ -1,5 +1,8 @@
 <article class="post-single">
   <header class="post-single__header">
+    {{ if .Draft }}
+    <p class="post-single__draft">*** Draft*** </p>
+    {{ end }}
     <h1>{{ .Title }}</h1>
     <time itemprop="datePublished" datetime="{{.Date.Format "2006-01-02"}}" class="post-single__meta">
       {{.Date.Format "January 2, 2006"}}

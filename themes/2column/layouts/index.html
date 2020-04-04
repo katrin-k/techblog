@@ -10,7 +10,9 @@
   {{ range (.Paginator 8).Pages }}
   <li class="post-list__item">
     <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
-    <p class="post-list__date">{{.Date.Format "January 2, 2006"}}</p>
+    <time itemprop="datePublished" datetime="{{.Date.Format "2006-01-02"}}" class="post-list__date">
+        {{.Date.Format "January 2, 2006"}}
+    </time>
     <p class="post-list__summary">{{.Summary}}</p>
     {{ if .Truncated }}
     <div>

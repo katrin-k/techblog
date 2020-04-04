@@ -1,9 +1,9 @@
 <article class="post-single">
   <header class="post-single__header">
     <h1>{{ .Title }}</h1>
-    <div class="post-single__meta">
+    <time itemprop="datePublished" datetime="{{.Date.Format "2006-01-02"}}" class="post-single__meta">
       {{.Date.Format "January 2, 2006"}}
-    </div>
+    </time>
   </header>
   <main class="post-single__main">
     {{ .Content }}

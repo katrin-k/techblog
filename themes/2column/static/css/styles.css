@@ -438,6 +438,12 @@ code {
   color: var(--color-link-focus-background);
 }
 
+.pagination__link[aria-disabled] {
+  cursor: not-allowed;
+  background: var(--color-grey);
+  color: var(--color-grey-xdark);
+}
+
 .pagination__link--previous {
   transform: rotateY(180deg);
 }

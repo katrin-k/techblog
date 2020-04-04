@@ -57,7 +57,7 @@ body {
   height: 100vh;
   background-color: var(--color-secondary);
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -125,7 +125,7 @@ a:focus {
 
 @media screen and (min-width: 1024px) {
   .blog {
-    grid-template-columns: 430px minmax(500px, 900px);
+    grid-template-columns: minmax(430px, 30%) minmax(500px, 1020px);
   }
 }
 
@@ -169,6 +169,14 @@ a:focus {
     height: calc(100vh - 6rem);
     margin: 3rem;
     padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__main {
+    height: calc(100vh - 6rem);
+    margin: 3rem;
+    padding: 5rem 8rem;
   }
 }
 
@@ -411,12 +419,13 @@ code {
 .pagination {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 3rem;
 }
 
 .pagination > * {
-  margin: 0 0.25rem;
+  margin: 0.5rem 0.25rem 0;
 }
 
 .pagination__link {

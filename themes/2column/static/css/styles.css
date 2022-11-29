@@ -379,6 +379,33 @@ a:focus {
   }
 }
 
+.browse-nav {
+  display: grid;
+  gap: 3rem 5rem;
+  grid-template-areas: "prev next" "home home";
+}
+
+.browse-nav__prev {
+  grid-area: prev;
+}
+.browse-nav__next {
+  grid-area: next;
+  justify-self: end;
+}
+.browse-nav__home {
+  grid-area: home;
+}
+.browse-nav__symbol {
+  text-align: right;
+}
+.browse-nav__symbol--prev {
+  transform: rotate(180deg);
+}
+.browse-nav__link--next {
+  display: inline-block;
+  text-align: right;
+}
+
 /* Code blocks, adding + overriding to Prism */
 pre[class*="language-"] {
   position: relative;

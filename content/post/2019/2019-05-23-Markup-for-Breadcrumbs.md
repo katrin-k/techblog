@@ -1,7 +1,7 @@
 ---
 title: "Markup for Breadcrumbs"
 slug: "markup-for-breadcrumbs"
-date: 2019-05-23T10:07:58+02:00
+date: 2019-10-23T10:07:58+02:00
 categories: ["Accessibility", "HTML", "TIL"]
 tags: ["breadcrumb", "snippets"]
 ---

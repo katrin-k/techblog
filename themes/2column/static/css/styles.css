@@ -382,15 +382,16 @@ a:focus {
 .browse-nav {
   display: grid;
   gap: 3rem 5rem;
-  grid-template-areas: "prev next" "home home";
+  grid-template-areas: "next prev" "home home";
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .browse-nav__prev {
   grid-area: prev;
+  justify-self: end;
 }
 .browse-nav__next {
   grid-area: next;
-  justify-self: end;
 }
 .browse-nav__home {
   grid-area: home;
@@ -398,10 +399,10 @@ a:focus {
 .browse-nav__symbol {
   text-align: right;
 }
-.browse-nav__symbol--prev {
+.browse-nav__symbol--next {
   transform: rotate(180deg);
 }
-.browse-nav__link--next {
+.browse-nav__link--prev {
   display: inline-block;
   text-align: right;
 }

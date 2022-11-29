@@ -42,6 +42,8 @@
   --color-heading: var(--color-primary-dark);
   --color-code-background: var(--color-grey-xxdark);
   --color-code-text: var(--color-grey-xxlight);
+  --color-code-inline-background: var(--color-grey-light);
+  --color-code-inline-text: var(--color-grey-xxdark);
 }
 
 *,
@@ -444,10 +446,11 @@ code[class*="language-"] {
 }
 
 code {
-  background: var(--color-code-background);
-  color: var(--color-code-text);
+  background: var(--color-code-inline-background);
+  color: var(--color-code-inline-text);
   padding: 2px 5px;
   border-radius: 2px;
+  font-size: 0.8em;
 }
 
 /* Pagination */

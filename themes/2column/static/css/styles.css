@@ -114,18 +114,11 @@ a:focus {
 /* Layouts */
 .blog {
   display: grid;
-  grid-template-rows: 200px auto;
-}
-
-@media screen and (min-width: 768px) {
-  .blog {
-    grid-template-rows: 280px auto;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .blog {
-    grid-template-columns: minmax(430px, 30%) minmax(500px, 1020px);
+    grid-template-columns: 430px minmax(500px, 1020px);
   }
 }
 

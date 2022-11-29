@@ -1,5 +1,6 @@
 ---
 title: "Difference between yield and return"
+slug: "difference-between-yield-and-return"
 date: 2021-05-13T11:23:58+01:00
 categories: ["TIL", "JS"]
 tags: ["keyword", "yield", "return", "Cypress"]

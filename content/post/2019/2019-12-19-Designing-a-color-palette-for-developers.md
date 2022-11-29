@@ -1,5 +1,6 @@
 ---
 title: "Designing a color palette - for developers"
+slug: "designing-a-color-palette-for-developers"
 date: 2019-12-19T10:19:58+01:00
 categories: ["Design", "TIL"]
 tags: ["color palette"]

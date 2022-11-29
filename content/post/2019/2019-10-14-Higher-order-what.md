@@ -1,5 +1,6 @@
 ---
 title: "Higher-order what?!"
+slug: "higher-order-what"
 date: 2019-10-14T10:08:58+02:00
 categories: ["JS", "Software Architecture"]
 tags: ["Higher-order functions", "Higher-order components"]

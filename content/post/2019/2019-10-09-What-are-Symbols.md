@@ -1,5 +1,6 @@
 ---
 title: "What are Symbols?"
+slug: "what-are-symbols"
 date: 2019-10-11T17:08:58+02:00
 categories: [JS]
 tags: ["Understanding JS", "Symbols", "ES6", "ES2015", "Primitives"]

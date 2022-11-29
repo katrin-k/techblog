@@ -1,5 +1,6 @@
 ---
 title: "Markup for Breadcrumbs"
+slug: "markup-for-breadcrumbs"
 date: 2019-05-23T10:07:58+02:00
 categories: ["Accessibility", "HTML", "TIL"]
 tags: ["breadcrumb", "snippets"]
@@ -7,7 +8,7 @@ tags: ["breadcrumb", "snippets"]
 
 Reading into [the Breadcrumb example](https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html) on the WAI-ARIA Practices website, i noticed a tiny detail in the HTML i never gave much thought before: The list uses `<ol>`, an ordered list, for the list markup.
 
-So far, i've used an unordered list `<ul>`, mainly because i never gave it any thought and unordered lists are always used in menus. Come to think of it, it totally makes sense to use `<ol>` for breadcrumb navigations since it explicitly conveys the hierarchy of the nested page structure in that naviation. 
+So far, i've used an unordered list `<ul>`, mainly because i never gave it any thought and unordered lists are always used in menus. Come to think of it, it totally makes sense to use `<ol>` for breadcrumb navigations since it explicitly conveys the hierarchy of the nested page structure in that naviation.
 
 ## Code snippet
 
